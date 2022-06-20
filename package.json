@@ -1,0 +1,11 @@
+{
+  "name": "plataforma-de-perguntas-respostas",
+  "version": "1.0.0",
+  "description": "Plataforma perguntas e respostas - curso formação node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gustavo Souza Santos",
+  "license": "ISC"
+}
