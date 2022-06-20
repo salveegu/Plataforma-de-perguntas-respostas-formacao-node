@@ -1,0 +1,28 @@
+EJS utilizo para renderizar o Html
+
+Aplicando variáveis globais
+
+app.locals.siteName = "Site do Gustavo"
+
+
+
+<!-- <ul>
+        <% users.forEach(function(user){ %>
+          <%- include('user/show', {user: user}) %>
+        <% }); %>
+</ul> -->
+
+
+<!-- <ul>
+        <% for(var i=0; i<produtos.length; i++) {%>
+           <li><%= produtos[i] %></li>
+        <% } %>
+</ul> -->
+
+
+    <ul>
+        <% produtos.foreach(function(produto) { %>
+        <li> Name:<%= produto.nome %> Price:<%= produto.preco %></li>
+        <% }); %> 
+    </ul> 
+    
