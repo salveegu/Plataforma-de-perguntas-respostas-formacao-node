@@ -1,3 +1,16 @@
- h1{
-    color: blue;
- }
+body{
+   background-color: #000000 !important;
+}
+
+h1{
+   color: blue !important;
+}
+
+/* #formulario-pergunta{
+   margin-top: 2vh;
+} */
+
+#margin-bottom-navbar{
+   margin-bottom: 2vh;
+
+}

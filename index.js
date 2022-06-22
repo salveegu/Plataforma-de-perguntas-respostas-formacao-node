@@ -10,33 +10,14 @@ app.use(express.static('public'));
 app.locals.siteName = "Site do Gustavo"
 
 
-//definição de rotas
+//definição de rotas 000
 app.get("/",(req,res) =>{
-    var nome = req.params.nome;
-    var lang = req.params.lang;
-    var hobbie = "Violão";
-    var exibirMsg = false;
- 
-    var produtos = [
-        {nome: "Doritos",preco:3.14},
-        {nome: "Coca-cola",preco:5.0},
-        {nome: "Leite",preco:1.45}
-    ]
-
-    res.render('index',{
-        nome: nome,
-        lang:lang,
-        empresa:"Guia do Programador",
-        inscritos: 8080,
-        hobbie:hobbie,
-        msg:exibirMsg,
-        produtos:produtos
-    });
-    
+   res.render('index');
 });
 
-app.get("/home",(req,res)=>{
-    res.render('home');
+//definição de rota 001
+app.get("/perguntar",(req,res)=>{
+    res.render('perguntar');
 });
 
 app.get("/perfil",(req,res)=>{
