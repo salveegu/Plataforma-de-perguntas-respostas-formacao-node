@@ -14,11 +14,11 @@ app.get("/",(req,res) =>{
     var hobbie = "Violão";
     var exibirMsg = false;
  
-    var data = {
-         'name': 'Sonam',
-         'id': 21,
-         'Marks': [40,50,60,70,80]
-    }
+    var produtos = [
+        {nome: "Doritos",preco:3.14},
+        {nome: "Coca-cola",preco:5.0},
+        {nome: "Leite",preco:1.45}
+    ]
 
     res.render('index',{
         nome: nome,
@@ -26,7 +26,8 @@ app.get("/",(req,res) =>{
         empresa:"Guia do Programador",
         inscritos: 8080,
         hobbie:hobbie,
-        msg:exibirMsg
+        msg:exibirMsg,
+        produtos:produtos
     });
     
 });

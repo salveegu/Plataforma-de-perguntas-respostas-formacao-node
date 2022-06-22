@@ -25,16 +25,14 @@
 
         <%}else  {%>
          <h3>Não deu erro!</h3>
-     <%}%>
+     <%}%> -->
 
-    <% data.forEach((value)=>{ %>
-       <%=value%>
-    <% }) %>
-     
-
-    
-    
-    
+     <% produtos.forEach(function(produto) { %>
+        <hr>
+        <h3><%= produto.nome %></h3>
+        <h4><%= produto.preco %></h4>
+    <% }) %>  
+ 
 
 </body>
 </html>
