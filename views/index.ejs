@@ -4,20 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- definindo o caminho do meu css -->
+    
+    <link rel="stylesheet" href="/css/style.css"> 
+
     <title>Guia de Peruntas</title>
 </head>
 <body>
+
+    <img src="/img/nature-image.jpg" width="500 px" height="250">
      
     <h1>Nome do site: <%=siteName%></h1>
+
     <h2>Index: Guia perguntas</h2>
     <hr>
     <h3>Lista de Perguntas</h3>
 
-     <p>Nome: <%=nome%></p>  
+     <p>Nome:      <%=nome%></p>  
      <p>Linguagem: <%=lang%></p> 
-     <p>Empresa: <%=empresa%></p> 
-     <p>Inscrito: <%=inscritos%></p> 
-     <p>Hobbie: <%=hobbie%></p>
+     <p>Empresa:   <%=empresa%></p> 
+     <p>Inscrito:  <%=inscritos%></p> 
+     <p>Hobbie:    <%=hobbie%></p>
     
     
     <%if (msg == true) {%>
@@ -32,8 +39,9 @@
         <h3><%= produto.nome %></h3>
         <h4><%= produto.preco %></h4>
     <% }) %>  
- 
 
+   
+ 
 </body>
 </html>
 

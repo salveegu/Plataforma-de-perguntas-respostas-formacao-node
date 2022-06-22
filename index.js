@@ -3,9 +3,12 @@ const app = express();
 
 //definindo meu renderizador de HTML
 app.set('view engine','ejs');
-// app.set('views',path.join(__dirname,"./views"))
+
+//criando a pasta para salvar os arquivos estaticos/imagens planilhas/css 
+app.use(express.static('public'));
 
 app.locals.siteName = "Site do Gustavo"
+
 
 //definição de rotas
 app.get("/",(req,res) =>{
