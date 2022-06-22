@@ -20,9 +20,10 @@ app.get("/perguntar",(req,res)=>{
     res.render('perguntar');
 });
 
-app.get("/perfil",(req,res)=>{
-    res.render('principal/perfil');
-})
+//definição de rota 002
+app.post("/salvarpergunta",(req,res)=>{
+    res.send("Formulário recebido");
+});
 
 app.listen(8080,()=>{
   console.log("Servidor Online!")
